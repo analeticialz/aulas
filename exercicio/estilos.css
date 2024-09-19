@@ -1,0 +1,16 @@
+header{
+    background-image: url("bg.jpg");
+    height: 380px;
+    background-size: cover;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+.topo{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
