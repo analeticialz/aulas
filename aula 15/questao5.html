@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+        let prato = parseInt(prompt(
+            "digite seu prato: \n1 - vegetariano\n2 - peixe\n3 - frango\n4 - carne"
+        ))
+        let caloria = 0
+        if(prato==1){
+            caloria = caloria + 180
+        }
+        else if(prato==2){
+            caloria = caloria + 230
+        }
+        else if(prato==3){
+            caloria = caloria + 250
+        }
+        else if(prato==4){
+            caloria = caloria + 350
+        }
+
+        let sobremesa = parseInt(prompt(
+            "digite sua sobremesa: \n1 - abacaxi\n2 - sorvete diet\n3 - mouse diet\n4 - mouse chocolate"
+        ))
+        
+        if(sobremesa==1){
+            caloria = caloria + 75
+        }
+        else if(sobremesa==2){
+            caloria = caloria + 110
+        }
+        else if(sobremesa==3){
+            caloria = caloria + 170
+        }
+        else if(sobremesa==4){
+            caloria = caloria + 200
+        }
+        let bebida = parseInt(prompt(
+            "digite sua bebida: \n1 - chà\n2 - suco de laranja\n3 - suco de melao\n4 - refrigerante diet"
+        ))
+        
+        if(bebida == 1){
+            caloria = caloria + 20
+        }
+        else if(bebida==2){
+            caloria = caloria + 70
+        }
+        else if(bebida == 3){
+            caloria = caloria + 100
+        }
+        else if(bebida==4){
+            caloria = caloria + 65
+        }
+        alert("caloria total: "+ caloria)
+         </script>
+  </head>
+  <body></body>
+</html>

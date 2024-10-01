@@ -7,19 +7,20 @@
   </head>
 
   <script>
-    let saldo = parseInt(prompt("digite seu saldo"))
-    if(saldo <=500){
-        alert ("nenhum credito")
-    }
-    else if(saldo >=501 && saldo <=1000){
-        alert("30% do valor do saldo medio")
-    }
-    else if(saldo >=1001 && saldo <=3000){
-        alert("40% do valor do saldo medio")
-    }
-    else if(saldo > 3001){
-        alert("50% do valor do saldo medio")
-    }
+      let saldo = parseFloat(prompt("Digite seu saldo"));
+      if (saldo <= 500) {
+        alert("Nenhum Crédito");
+      } else if (saldo > 500 && saldo <= 1000) {
+        let credito = saldo * (30 / 100);
+        alert("Seu saldo: " + saldo + "\nCrédito: " + credito);
+      } else if (saldo > 1000 && saldo <= 3000) {
+        let credito = saldo * (40 / 100);
+        alert("Seu saldo: " + saldo + "\nCrédito: " + credito);
+      } else if (saldo > 3000) {
+        let credito = saldo * (50 / 100); //0.5
+        alert("Seu saldo: " + saldo + "\nCrédito: " + credito);
+      }
+      
      </script>
 
 <body></body>
