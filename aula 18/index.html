@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let i = 1;
+      let numero = 0;
+      let primos = 0;
+      while (i <= 10) {
+        numero = parseInt(prompt("Digite o número"));
+
+        let a = 1;
+        let cont = 0;
+
+        while (a <= numero) {
+          if (numero % a == 0) {
+            cont++; //1
+          }
+          a++;
+        }
+        if (cont == 2) {
+          console.log(numero + " é primo");
+          primos++;
+        }
+        i++;
+      }
+      console.log("Você digitou " + primos + " numeros Primos");
+    </script>
+  </head>
+  <body></body>
+</html>
