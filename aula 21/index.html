@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+let controle = 0
+        let tarefas = ['t1','t2','t3']
+        while (controle != "sair") {
+            controle = prompt('quer adicionar, remover ou sair ?')
+            if (controle == 'adicionar') {
+                // alert('adicionar')
+                addTarefa(tarefas)
+            } else if (controle == 'remover') {
+                // alert('remover')
+                remTarefa(tarefas)
+            } else if (controle == 'sair') {
+                // alert("sair")
+            }
+        }
+        alert(tarefas)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
