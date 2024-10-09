@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id ="digite" type="text" placeholder="digite algo">
+    <br>
+    <input id="escreva" type="text" placeholder="digite algo">
+    <br>
+    <button onclick="trocar()">trocar</button>
+
+
+</body>
+<script>
+function trocar(){
+    let input1 = document.getElementById('digite')
+    let input2 = document.getElementById('escreva')
+    let aux = input1.value
+    input1.value = input2.value
+    input2.value = aux
+}
+
+</script>
+</html>
