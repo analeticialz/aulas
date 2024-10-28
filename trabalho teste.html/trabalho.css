@@ -19,3 +19,18 @@
     top: 94px;
 
 }
+
+.logo{
+    width: 253px;
+height: 44px;
+top: 42px;
+left: 104px;
+gap: 0px;
+opacity: 0px;
+
+}
+
+#home{
+    color:black;
+    background-color:white;
+}
